@@ -268,7 +268,8 @@ setTimeout(() => {
             }
 
         } catch (error) {
-            rejected(error);
+            alert("sorry we are not able to fetch the data at this moment because of our API is not responding at this time !");
+
         }
     })
 
