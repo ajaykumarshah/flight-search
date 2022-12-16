@@ -62,13 +62,6 @@ else {
     document.getElementById("resultdiv2").style.gridArea = "1/6/7/15";
 
 
-    // let divtag = document.createElement("div");
-    // let btnfirst = document.createElement("button");
-    // btnfirst.className = "btn";
-    // btnfirst.innerText = " 6:00 AM - 11:50 AM"
-    // btnfirst.onclick = timebased(6, 12);
-    // divtag.appendChild(btnfirst);
-    // document.getElementById("sorted").appendChild(divtag);
 
 }
 
@@ -119,24 +112,7 @@ setTimeout(() => {
 
     let check = new Promise(async (response, rejected) => {
         try {
-            // if( x[3]==undefined){
-            //     console.log("inside condition");
-            //     console.log(x[3],"asdfghjkasdfghjk");
-            //     // document.getElementById("sorted").style.gridArea="2/1/8/4";
-            //     // document.getElementById("resultdiv1").style.gridArea="2/4/7/15";
-            //     // document.getElementById("resultdiv2").style.gridArea="2/7/8/15";
 
-            //    }
-            //    else{
-            //     console.log("ajayteli300000000001");
-            //     document.getElementById("resultdiv1").style.gridArea="2/4/7/6";
-            //     document.getElementById("resultdiv2").style.gridArea="2/7/7/15";
-            //     // document.getElementById("resultdiv2").innerText=" rsdfghujikorshdlsdfjdgsfjsfjsjfvdhtfeydhkesdjf Lorem ipsum dolor sit amet consectetur adipisicing elit. Corpor"+
-
-
-            //     console.log("inside condition22");
-            //     console.log(x[3]);
-            //     // document.getElementById("resultdiv1").style.gridArea="2/1/7/10";
             //    }
             console.log("this is ajay");
             let a = await fetch('https://flight-fare-search.p.rapidapi.com/v2/flight/?from=' + starthere + '&to=' + endhere + '&date=' + x[2] + '&adult=1', options);
@@ -185,13 +161,6 @@ setTimeout(() => {
                         console.log("no flight image found");
                 }
                 flightspantag.appendChild(imagetag1);
-                // let flightcode = document.createElement("span");
-                // flightcode.className = "ajay1111";
-                // flightcode.innerText = " " + obj.flight_code;
-                // flightspantag.className = "ajay1000";
-                // flightspantag.innerText = obj.flight_name;
-                // flightspantag.appendChild(flightcode);
-                // divtag.appendChild(flightspantag);
 
                 let flightcode = document.createElement("span");
                 let fligthname2 = document.createElement("span");

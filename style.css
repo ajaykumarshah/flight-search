@@ -46,7 +46,7 @@
 
     grid-area: leftcontainer;
     grid-column: span 15;
-    grid-row: span 9;
+    grid-row: span 10;
 
     /* background-image: linear-gradient(to top right, rgb(12, 20, 39), rgb(3, 42, 58)); */
     /* background-color: rgba(0,0,0,.85); */
@@ -81,7 +81,7 @@
     /* background-image: linear-gradient(to  top  right ,rgb(2, 6, 15) , #2451573d); */
     background-color: rgb(228, 228, 228);
     color: black;
-    grid-row: span 9;
+    grid-row: span 10;
     border: none;
     /* box-shadow: 0px 5px 5px 0px #888888;
     margin-bottom: 20px; */
