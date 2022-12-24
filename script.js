@@ -83,25 +83,16 @@ let airportskeys = Object.keys(airports);
 function checkthis(tag) {
   document.getElementById("selection").innerHTML = "";
   let inputs = document.getElementById(tag).value;
-  //   document.getElementById("inner").innerText=inputs;
+
   let elements = airportskeys.filter((element) => {
     if (element.indexOf(inputs) == 0) {
-      //   console.log(element);
+
       return element;
     }
   })
-  //   document.getElementById("inner").innerText=elements.length;
   for (let i = 0; i < elements.length; i++) {
 
-    //  if( document.getElementById("round").checked){
 
-    //   let inputtag=document.createElement("input");
-    //   inputtag.setAttribute("type","date");
-    //   inputtag.setAttribute("id","secondinput");
-    //   inputtag.value=newdate;
-    //   document.getElementById("depart").appendChild(inputtag);
-
-    //  }
 
 
 

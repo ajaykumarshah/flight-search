@@ -106,7 +106,7 @@
 
 }
 
-@media (min-width:400px) and (max-width:600px) {
+/* @media (min-width:400px) and (max-width:600px) {
     .outer {
         grid-template-columns: 400px;
         grid-auto-rows: 100px;
@@ -126,6 +126,11 @@
 
     }
 
+    .name {
+        color: red;
+        font-size: 10px;
+    }
+
     .mainsection {
 
         grid-row-start: 7;
@@ -142,9 +147,9 @@
 
 
 
-}
+} */
 
-@media (max-width:400px) {
+/* @media only screen and (max-width: 500px) {
 
     .outer {
         grid-template-columns: 360px;
@@ -199,7 +204,7 @@
         grid-row-end: 13;
 
     }
-}
+} */
 
 .flight3icon {
     height: 20px;
@@ -453,6 +458,18 @@ infants {
 
 }
 
+.container3final {
+    display: flex;
+    margin-left: 8%;
+}
+
+.date_search_Container {
+    margin-top: 15px;
+    padding: 0;
+}
+
+
+
 .topperscontainer:hover {
     background-color: rgb(92, 97, 97);
 
@@ -488,7 +505,7 @@ infants {
 
 .maincontainer2 {
 
-    height: 620px;
+    height: 520px;
     /* height:  auto; */
     background-color: rgb(212, 200, 200);
     display: grid;
@@ -826,7 +843,7 @@ datalist {
     background: #08227e;
 }
 
-@media (max-width:600px) {
+/* @media (max-width:600px) {
     .maincontainer2 {
         height: 250vh;
 
@@ -871,33 +888,190 @@ datalist {
         margin: 0;
         padding: 0;
         /* margin-top: -100px; */
+
+
+/* #btn1 {
+    width: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+#btn2 {
+    width: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+#firstinput {
+    width: 50%;
+}
+
+#secondinput {
+    width: 40px;
+}
+
+#firstdate {
+    width: 100px;
+    height: 40px;
+    padding: 0;
+
+}
+
+} */
+
+@media (max-width: 500px) {
+
+    .outer {
+        grid-template-columns: 360px;
+        grid-auto-rows: 100px;
+        background-color: rgb(245, 237, 237);
+
     }
 
-    #btn1 {
-        width: 30px;
-        margin: 0;
-        padding: 0;
+    .topperscontainer {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 200;
+
+        border: none;
+        border-radius: 2px;
+        text-align: center;
+        padding: 2px;
+        width: 70%;
+        margin: 2%;
+        margin-left: 8%;
+        cursor: pointer;
+
+
     }
 
-    #btn2 {
-        width: 30px;
-        margin: 0;
-        padding: 0;
+
+    #heading h1 {
+        font-size: 20px;
+
     }
 
-    #firstinput {
-        width: 50px;
+    .from {
+        /* display: block; */
+        margin-right: 0;
+        padding-right: 0;
     }
 
-    #secondinput {
-        width: 40px;
+    #to {
+        padding: 5px 10px 5px 10px;
+    }
+
+    .roungpngContainer {
+        display: none;
+        text-align: center;
+    }
+
+    .name {
+
+        font-size: 33px;
+    }
+
+    .topsection {
+        color: red;
+        font-size: 20px;
+        grid-row-start: 1;
+    }
+
+    .leftsection {
+        grid-template-columns: span 2;
+        grid-row-start: 2;
+        grid-row-end: 6;
+        border-color: rgb(202, 36, 36);
+
+    }
+
+
+    .mainsection {
+
+        grid-row-start: 6;
+        grid-row-end: 10;
+    }
+
+    #signup,
+    #login,
+    #help {
+        padding: 0px 2px 0px 2px;
+        margin: 0 2px 0 2px;
+        font-size: 10px;
+    }
+
+    #helpicon,
+    #loginicon,
+    #signupicon {
+        height: 20px;
+    }
+
+    .bottomsection {
+        grid-row-start: 11;
+        grid-row-end: 13;
+
+    }
+
+    /* for the second page  start here*/
+    .second_page_FromTo_Container {
+        display: flex;
+    }
+
+    .container3 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #firstinput,
+    #secondinput,
+    #firstdate,
+    #btn0 {
+        width: 30%;
     }
 
     #firstdate {
+        padding: 5px;
+        margin-left: 50px;
+    }
+
+    #btn0 {
+        margin: 0 5px 5px 5px;
+    }
+
+    #firstinput {
         width: 100px;
-        height: 40px;
-        padding: 0;
+    }
+
+    #secondinput {
+        width: 100px;
+    }
+
+
+
+    .container3final {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .date_search_Container {
+        display: flex;
+    }
+
+    .maincontainer2 {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(10, 50px);
+    }
+
+    #soretd {
+        grid-area: 1/1/5/4;
+    }
+
+    #resultdiv1 {
+        background-color: #08227e;
+        grid-row-start: 6;
 
     }
+
+
 
 }

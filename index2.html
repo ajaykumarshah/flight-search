@@ -16,7 +16,7 @@
         <span id="secondpageradiofirst">
           <span id="for_hiding" onclick="hide_date_of_secondpage()">
             <label for="one_way">One Way</label>
-            <input type="radio" name="one_way" id="one_way" />
+            <input type="radio" name="one_way" id="one_way"   />
           </span>
         </span>
         <span id="secondpageradiosecond">
@@ -29,21 +29,39 @@
           />
         </span>
       </div>
-      <div class="container3">
-        <label for="firstinput">From</label>
-        <input type="text" id="firstinput" />
-        <label for="secondinput">To</label>
-        <input type="text" id="secondinput" />
-        <input type="date" id="firstdate" />
+      <div class="container3final">
 
-        <span id="second_page_return_date">
+     
+      <div class="container3">
+        <div class="second_page_FromTo_Container">
+        <label for="firstinput">From</label>
+        
+          <input type="text" id="firstinput" list="datalistContainer" onkeyup="Handle_Second_Page_Inpiut('firstinput','datalistContainer')" />
+          <datalist id="datalistContainer">
+
+          </datalist>
+       
+        <label for="secondinput">To</label>
+        <input type="text" id="secondinput" list="datalistContainer2"  onkeyup="Handle_Second_Page_Inpiut('secondinput','datalistContainer2')" />
+        <datalist id="datalistContainer2">
+
+        </datalist>
+       </div>
+       
+      </div>
+      <div class="date_search_Container">
+
+     
+        <input type="date" id="firstdate" />
+     
+        <span id="second_page_return_date"  >
           Return<input type="date" id="second_page_date_input_tag" />
         </span>
-        <button id="btn0"  onclick="" >Search</button>
-        <button id="btn1">LOGIN</button>
-        <button id="btn2">SIGNUP</button>
+        <button id="btn0"  onclick="Second_Page_Search()" >Search</button>
+      </div>
       </div>
     </div>
+    
     <div class="maincontainer2">
       <div id="sorted">
         <div class="timingbased">
